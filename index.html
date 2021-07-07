@@ -59,9 +59,23 @@
   }
   .social-container {
    display: flex;
-   justify-content: space-around;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    margin-top: 5px;
    margin-bottom: 30px;
+   width: 100%;
+  }
+
+  .social-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 150px;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
   }
   </style>
   <body>
@@ -69,17 +83,17 @@
         <img class="logo" src="./logo-regalis.jpeg" alt="FORMATIA REGALIS IASI">
       </div>
         <div class="">
-          <p style="text-align: center; margin-bottom: 0;">Contact</p>
-          <h2 class="tc" style="margin-bottom: 0; margin-top: 0; display: flex; align-items: center; justify-content: center; align-content: center; align-self: center;"><img style="width: 25px; height: 25px; margin-right: 5px;" src="./icon-phone.svg" alt="telefon"><a href="tel:0040756300163">0756.300.163</a></h2>
+          <h1 class="tc" style="margin-bottom: 0; margin-top: 0; display: flex; flex-direction: row; align-items: center; justify-content: center; align-content: center; align-self: center;"><a href="tel:0040756300163"><img style="width: 28px; height: 28px; margin-right: 5px;" src="./icon-phone.svg" alt="telefon">0756.300.163</a></h1>
+          <p style="text-align: center; margin-top: 0;">Ionut Ciobanu</p>
         </div>
         <div class="">
-          <p style="width: 100%; margin-bottom: 0; text-align: center;">Social media</p>
+          <p style="width: 100%; margin-bottom: 0; text-align: center;">Follow us</p>
           <div class="social-container">
-            <a href="https://www.fb.me/formatiaregalis"><img style="width: 25px; height: 25px; margin-right: 5px;" src="./icon-fb.svg" alt="facebook"></a>
-            <a href="https://www.instagram.com/formatiaregalis/"><img style="width: 25px; height: 25px; margin-right: 5px;" src="./icon-insta.svg" alt="instagram"></a>
-            <a href="https://www.tiktok.com/@formatiaregalis"><img style="width: 25px; height: 25px; margin-right: 5px;" src="./icon-tiktok.svg" alt="tiktok"></a>
+            <a class="social-item" href="https://www.fb.me/formatiaregalis"><img style="width: 25px; height: 25px; margin-right: 5px;" src="./icon-fb.svg" alt="facebook">Facebook</a>
+            <a class="social-item" href="https://www.instagram.com/formatiaregalis/"><img style="width: 25px; height: 25px; margin-right: 5px;" src="./icon-insta.svg" alt="instagram">Instagram</a>
+            <a class="social-item" href="https://www.tiktok.com/@formatiaregalis"><img style="width: 25px; height: 25px; margin-right: 5px;" src="./icon-tiktok.svg" alt="tiktok">TikTok</a>
           </div>
         </div>
-      <h2 style="text-align: center;">WEBSITE IN LUCRU</h2>
+      <p style="text-align: center;">WEBSITE IN LUCRU</p>
   </body>
 </html>
